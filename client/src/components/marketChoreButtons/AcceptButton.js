@@ -73,17 +73,16 @@ export const AcceptButton = ({
     <Button
       style={styles.circleTag}
       onPress={() => {
-        acceptChore(type, body)
-          .then(() => {
-            console.log('update redux state');
-            getMarketChores(groupId);
-            getSwappableChores(groupId);
-            getUserChores(groupId);
-            if (type === 'transfer') {
-              getWallet();
-            }
-          })
-          .catch(e => console.error('error accepting chore', e));
+        acceptChore(type, body).then(() => {
+          console.log('update redux state');
+          getMarketChores(groupId);
+          getSwappableChores(groupId);
+          getUserChores(groupId);
+          if (type === 'transfer') {
+            getWallet();
+          }
+        });
+        //.catch(e => console.error('error accepting chore', e));
       }}
     >
       <Text style={styles.buttonText}> Accept </Text>
