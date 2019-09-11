@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   circleTag: {
     backgroundColor: theme.PRIMARY_COLOR,
     height: 40,
-    borderRadius: 100,
+    borderRadius: 25,
     marginLeft: 10,
     justifyContent: 'center',
   },
