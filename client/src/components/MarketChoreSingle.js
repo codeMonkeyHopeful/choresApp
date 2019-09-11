@@ -229,13 +229,15 @@ const MarketChoreSingle = props => {
             </View>
           </Row>
           <CardItem>
-            <CancelButton
-              type='swap'
-              body={{
-                userId: chore.userId,
-                swapChoreId: chore.swapAssignedChore1.id,
-              }}
-            />
+            <View style={{ marginLeft: 'auto' }}>
+              <CancelButton
+                type='swap'
+                body={{
+                  userId: chore.userId,
+                  swapChoreId: chore.swapAssignedChore1.id,
+                }}
+              />
+            </View>
           </CardItem>
         </Card>
       </View>
